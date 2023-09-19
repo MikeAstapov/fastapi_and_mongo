@@ -8,8 +8,7 @@ from pydantic import BaseModel, Field, EmailStr
 from pymongo import MongoClient
 
 app = FastAPI()
-connection_url = f"fastapimongo-mongodb-1:27017"
-print(f"Connecting to: {connection_url}")
+connection_url = "mongodb://localhost:27017"
 client = MongoClient(connection_url)
 db = client['fastapidb']
 collection = db['students']
