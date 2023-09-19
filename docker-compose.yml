@@ -1,0 +1,14 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - ./mongodb-data:/data/db
+  fastapi:
+    build: .
+    ports:
+      - 8000:8000
+    depends_on:
+      - mongodb
