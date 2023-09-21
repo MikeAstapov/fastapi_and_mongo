@@ -40,5 +40,5 @@
 ## Для запуска приложения:  
 1. git clone https://github.com/MikeAstapov/fastapi_and_mongo.git
 2. cd fastapi_and_mongo
-3. docker-compose up
+3. docker-compose up  
 Далее можно использовать встроенный SWAGER , доступный по адресу localhost:8000/docs или другую альтернативу, например PostMan
